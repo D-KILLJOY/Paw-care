@@ -34,7 +34,8 @@ button {
 }
 .container {
 	width: 100%;
-	max-width: 160rem;
+	max-width: 140rem;
+	margin: 0 auto;
 }
 
 /* ! VARIABLES  */
@@ -65,6 +66,8 @@ nav {
 	align-items: center;
 	position: relative;
 	padding: 1.5rem;
+	max-width: 140rem;
+	margin: 0 auto;
 }
 
 .logo {
@@ -149,6 +152,8 @@ menu {
 /* ! HERO  */
 .hero {
 	display: grid;
+	max-width: 140rem;
+	margin: 0 auto;
 }
 
 .hero-img {
@@ -198,7 +203,7 @@ menu {
 
 .stripe-container {
 	width: 100%;
-	max-width: 160rem;
+	max-width: 140rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -317,10 +322,14 @@ menu {
 	font-weight: 600;
 }
 
+.bg {
+	background-color: var(--LIGHT-G);
+}
+
 .invitation {
 	margin: 2rem 0;
-	background-color: var(--LIGHT-G);
 	width: 100%;
+	max-width: 140rem;
 	position: relative;
 	padding: 1rem;
 }
@@ -663,7 +672,7 @@ footer > p > a {
 	}
 
 	.desc h2 {
-		font-size: 3rem;
+		font-size: 3.1rem;
 		margin: 1rem 0 3rem;
 	}
 
@@ -697,11 +706,13 @@ footer > p > a {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		font-size: 1.8rem;
+		justify-content: space-between;
 		padding: 0 1.5rem;
 	}
 
 	.comp-data {
 		order: -2;
+		max-width: 30rem;
 	}
 
 	.comp-data img {
@@ -732,5 +743,256 @@ footer > p > a {
 
 	footer > p > a {
 		font-size: 2.2rem;
+	}
+}
+
+@media screen and (min-width: 1350px) {
+	/* ! HEADER  */
+
+	nav {
+		padding: 2rem 3rem;
+	}
+
+	.logo {
+		width: 15rem;
+	}
+
+	.navigation {
+		width: 70%;
+		justify-content: space-between;
+	}
+
+	.nav-items {
+		display: inline;
+	}
+
+	.nav-list {
+		display: inline;
+		line-height: unset;
+	}
+
+	.nav-link {
+		font-size: 2.3rem;
+		margin-right: 3.5rem;
+	}
+
+	.login {
+		margin: 0;
+	}
+
+	.login li a {
+		font-size: 2rem;
+		padding: 0.3rem 1.1rem;
+		margin-left: 2.5rem;
+	}
+
+	/* ! HERO  */
+	.hero {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+	}
+
+	.image {
+		margin: 3rem 0;
+		order: 3;
+	}
+
+	.hero-img {
+		margin: 2rem 0 3rem;
+		width: 65rem;
+	}
+
+	.heading {
+		font-size: 5rem;
+		text-align: left;
+		margin: 0 0 2rem;
+	}
+
+	.description {
+		font-size: 2.3rem;
+		text-align: left;
+		padding: 0 6rem;
+		margin: 1rem 0 4rem;
+	}
+
+	.herobtn {
+		margin: 0 6rem;
+	}
+
+	.stripe {
+		padding: 2rem;
+		gap: 2rem;
+	}
+
+	.stripe img {
+		width: 9rem;
+	}
+
+	.section-header {
+		font-size: 4.5rem;
+		margin: 7rem 0;
+	}
+
+	/* ! ABOUT  */
+
+	.home {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.about-article {
+		order: 10;
+	}
+
+	.about-article .heading {
+		font-size: rem;
+	}
+
+	.points {
+		padding: 0 0 0 2rem;
+	}
+
+	.points ul {
+		grid-template-columns: repeat(2, 1fr);
+		display: grid;
+		margin: 0 auto;
+		width: 60rem;
+		row-gap: 2rem;
+	}
+
+	.guide {
+		justify-content: center;
+		padding: 2rem;
+	}
+
+	.guide-sec > h2 {
+		font-size: 4rem;
+		padding: 0 15rem;
+		text-align: center;
+		margin: 10rem auto 3rem;
+	}
+
+	.guide div {
+		gap: 1.5rem;
+		width: 40rem;
+		margin: 2rem auto;
+		padding: 0 1rem;
+	}
+
+	.guide h2 {
+		margin: 0 0 0.5rem;
+		font-size: 2.1rem;
+	}
+
+	.guide p {
+		font-size: 1.7rem;
+	}
+
+	/* !  SERVICES  */
+	.services {
+		padding: 1rem 2rem;
+	}
+
+	.service {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 4rem;
+		justify-content: space-between;
+		margin: 10rem 0;
+		align-items: flex-start;
+	}
+
+	.rev {
+		order: 10;
+	}
+
+	.service button {
+		padding: 2rem 3rem;
+		font-size: 2rem;
+	}
+
+	.services img {
+		margin: 1rem 0 0;
+	}
+
+	.service h2 {
+		font-size: 4.9rem;
+	}
+
+	.service p {
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+	}
+
+	/* ! REVIEWS  */
+
+	.reviews {
+		padding: 2rem;
+		margin: 0 auto;
+		max-width: 140rem;
+	}
+
+	.review img {
+		width: 40rem;
+		margin: 2rem auto 3rem;
+	}
+
+	.name {
+		font-size: 4rem;
+		text-align: left;
+		margin: 2rem 0;
+	}
+
+	.message {
+		font-size: 2.3rem;
+		font-weight: 600;
+	}
+
+	.invitation {
+		margin: 2rem auto;
+		padding: 1rem 2rem;
+		display: grid;
+		grid-template-columns: 40% 60%;
+	}
+
+	.ack {
+		font-size: 2.5rem;
+		margin: 4rem 0 2rem;
+	}
+
+	.desc h2 {
+		font-size: 6rem;
+		margin: 3rem 0 5rem;
+	}
+
+	.desc .herobtn {
+		margin: 0;
+	}
+
+	.desc .herobtn .h-btn {
+		margin: 0;
+	}
+
+	.inv-img {
+		bottom: -10rem;
+	}
+
+	/* ! FOOTER  */
+
+	footer {
+		margin-top: 9rem;
+		padding: 1rem;
+	}
+
+	.footer {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		font-size: 1.8rem;
+		max-width: 140rem;
+		margin: 0 auto;
+		justify-content: space-between;
+		padding: 0 1.5rem;
+		align-items: center;
 	}
 }
