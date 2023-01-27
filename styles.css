@@ -102,7 +102,7 @@ menu {
 
 .navigation {
 	position: absolute;
-	background-color: var(--LIGHT-G);
+	background-color: var(--WHITE);
 	width: 100%;
 	height: 100vh;
 	z-index: 1;
@@ -127,10 +127,6 @@ menu {
 	font-weight: 600;
 }
 
-.login {
-	margin: 3rem 0;
-}
-
 .login li {
 	line-height: 3;
 }
@@ -139,14 +135,6 @@ menu {
 	font-size: 2rem;
 	color: var(--DARK);
 	font-weight: 600;
-	padding: 0.7rem 2.5rem;
-}
-
-.login .get-st {
-	border: 3px solid var(--DARK-G);
-	border-radius: 0.9rem;
-	color: var(--WHITE);
-	background-color: var(--DARK-G);
 }
 
 /* ! HERO  */
@@ -176,14 +164,14 @@ menu {
 
 .herobtn {
 	margin: 0 auto;
-	width: 34rem;
+	width: 30rem;
 }
 
 .h-btn {
 	border: 1px solid var(--DARK-G);
 	border-radius: 0.9rem;
-	margin-inline: 1rem;
-	padding: 1rem 2.5rem;
+	margin-inline: 0.5rem;
+	padding: 1rem 2rem;
 	background-color: transparent;
 	color: var(--DARK-G);
 	font-weight: 600;
@@ -205,8 +193,8 @@ menu {
 	width: 100%;
 	max-width: 140rem;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: space-around;
+	align-items: flex-end;
 	padding: 1rem 2rem;
 	flex-wrap: wrap;
 	gap: 2rem;
@@ -251,6 +239,8 @@ menu {
 
 .about-img {
 	width: 100%;
+	max-width: 60rem;
+	margin: 0 auto;
 	display: block;
 }
 
@@ -449,7 +439,7 @@ footer > p > a {
 	font-size: 1.6rem;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 720px) {
 	.sm-hidden {
 		display: block;
 	}
@@ -469,7 +459,7 @@ footer > p > a {
 	}
 
 	.logo {
-		width: 13rem;
+		width: 10rem;
 	}
 
 	.nav-btn button {
@@ -500,7 +490,7 @@ footer > p > a {
 	}
 
 	.nav-link {
-		font-size: 1.7rem;
+		font-size: 1.4rem;
 		margin-right: 1rem;
 	}
 
@@ -519,6 +509,13 @@ footer > p > a {
 		padding: 0.3rem 1.1rem;
 	}
 
+	.login .get-st {
+		border: 3px solid var(--DARK-G);
+		border-radius: 0.9rem;
+		color: var(--WHITE);
+		background-color: var(--DARK-G);
+	}
+
 	/* ! HERO  */
 	.hero {
 		display: grid;
@@ -526,19 +523,21 @@ footer > p > a {
 
 	.hero-img {
 		margin: 2rem auto 3rem;
-		width: 60rem;
+		width: 100%;
+		max-width: 60rem;
 	}
 
 	.heading {
 		font-size: 3rem;
-		padding: 0 6rem;
+		padding: 0;
 		line-height: 1.4;
 	}
 
 	.description {
-		font-size: 2.5rem;
-		padding: 0 12rem;
+		font-size: 2rem;
+		padding: 0 10rem;
 		margin: 1rem 0 4rem;
+		line-height: 1.5;
 	}
 
 	.stripe {
@@ -551,7 +550,7 @@ footer > p > a {
 	}
 
 	.section-header {
-		font-size: 4.5rem;
+		font-size: 4rem;
 		margin: 3rem 0;
 	}
 
@@ -570,11 +569,11 @@ footer > p > a {
 	}
 
 	.points img {
-		width: 4rem;
+		width: 3rem;
 	}
 
 	.points li {
-		font-size: 2rem;
+		font-size: 1.7rem;
 	}
 
 	.guide {
@@ -588,18 +587,18 @@ footer > p > a {
 	}
 
 	.guide div {
-		gap: 1.5rem;
+		gap: 2rem;
 		margin: 2rem 0;
 		padding: 0 1rem;
 	}
 
 	.guide h2 {
 		margin: 0 0 0.5rem;
-		font-size: 1.9rem;
+		font-size: 1.7rem;
 	}
 
 	.guide p {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 	}
 
 	/* !  SERVICES  */
@@ -626,19 +625,20 @@ footer > p > a {
 	}
 
 	.service h2 {
-		font-size: 2.9rem;
+		font-size: 2.5rem;
 	}
 
 	.service p {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 	}
 
 	/* ! REVIEWS  */
 
 	.reviews {
-		padding: 1rem;
+		padding: 2rem;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
 	}
 
 	.review img {
@@ -647,7 +647,7 @@ footer > p > a {
 	}
 
 	.name {
-		font-size: 1.9rem;
+		font-size: 2rem;
 		text-align: left;
 		margin: 2rem 0;
 	}
@@ -655,11 +655,11 @@ footer > p > a {
 	.message {
 		font-size: 1.5rem;
 		font-weight: 600;
+		line-height: 1.4;
 	}
 
 	.invitation {
 		margin: 2rem 0;
-
 		padding: 1rem 2rem;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -668,11 +668,11 @@ footer > p > a {
 	.ack {
 		color: var(--BROWN);
 		font-size: 1.5rem;
-		margin: 1rem 0 2rem;
+		margin: 2rem 0 2rem;
 	}
 
 	.desc h2 {
-		font-size: 3.1rem;
+		font-size: 2.5rem;
 		margin: 1rem 0 3rem;
 	}
 
@@ -746,11 +746,505 @@ footer > p > a {
 	}
 }
 
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 992px) {
+	nav {
+		padding: 2rem;
+	}
+
+	.logo {
+		width: 12rem;
+	}
+
+	.navigation {
+		width: 70%;
+		justify-content: space-between;
+	}
+
+	.nav-items {
+		display: inline;
+	}
+
+	.nav-list {
+		display: inline;
+		line-height: unset;
+	}
+
+	.nav-link {
+		font-size: 1.8rem;
+		margin-right: 1.5rem;
+	}
+
+	.login {
+		margin: 0;
+	}
+
+	.login li a {
+		font-size: 1.8rem;
+		padding: 0.3rem 1.1rem;
+		margin-left: 2rem;
+	}
+
+	/* ! HERO  */
+	.hero {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+		padding: 2rem;
+	}
+
+	.image {
+		margin: 3rem 0;
+		order: 3;
+	}
+
+	.hero-img {
+		margin: 2rem 0 3rem;
+		width: 100%;
+	}
+
+	.heading {
+		font-size: 3.5rem;
+		text-align: left;
+		margin: 0 0 2rem;
+	}
+
+	.description {
+		font-size: 2.1rem;
+		text-align: left;
+		padding: 0;
+		margin: 1rem 0 4rem;
+	}
+
+	.herobtn {
+		margin: 0;
+	}
+
+	.stripe {
+		padding: 2rem;
+		gap: 2rem;
+	}
+
+	.stripe img {
+		width: 9rem;
+	}
+
+	.section-header {
+		font-size: 4rem;
+		margin: 7rem 0;
+	}
+
+	/* ! ABOUT  */
+
+	.home {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 0 2rem;
+	}
+
+	.about-article {
+		order: 10;
+	}
+
+	.about-article .heading {
+		font-size: 2.8rem;
+	}
+
+	.points {
+		padding: 0;
+	}
+
+	.points ul {
+		grid-template-columns: repeat(2, 1fr);
+		display: grid;
+		margin: 0 auto;
+		width: 50rem;
+		row-gap: 2rem;
+	}
+
+	.guide {
+		justify-content: center;
+		padding: 2rem;
+	}
+
+	.guide-sec .heading {
+		font-size: 3rem;
+	}
+
+	.guide-sec > h2 {
+		font-size: 4rem;
+		padding: 0 15rem;
+		text-align: center;
+		margin: 10rem auto 3rem;
+	}
+
+	.guide div {
+		gap: 1.5rem;
+		width: 40rem;
+		margin: 2rem auto;
+		padding: 0 1rem;
+	}
+
+	.guide h2 {
+		margin: 0 0 0.5rem;
+		font-size: 2rem;
+	}
+
+	.guide p {
+		font-size: 1.6rem;
+	}
+
+	/* !  SERVICES  */
+	.services {
+		padding: 1rem 2rem;
+		max-width: 140rem;
+		margin: 0 auto;
+	}
+
+	.service {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 4rem;
+		justify-content: space-between;
+		margin: 10rem 0;
+		align-items: flex-start;
+	}
+
+	.service:nth-child(1) {
+		margin-top: 0;
+	}
+
+	.service:nth-child(3) {
+		margin-bottom: 0;
+	}
+
+	.rev {
+		order: 10;
+	}
+
+	.service button {
+		padding: 1.5rem 2rem;
+		font-size: 1.6rem;
+	}
+
+	.services img {
+		margin: 1rem 0 0;
+	}
+
+	.service h2 {
+		font-size: 3rem;
+	}
+
+	.service p {
+		font-size: 1.6rem;
+		margin-bottom: 1rem;
+	}
+
+	/* ! REVIEWS  */
+
+	.reviews {
+		padding: 2rem;
+		margin: 0 auto;
+		max-width: 140rem;
+	}
+
+	.review img {
+		width: 100%;
+		max-width: 40rem;
+		margin: 2rem auto 3rem;
+	}
+
+	.name {
+		font-size: 3rem;
+		text-align: left;
+		margin: 2rem 0;
+	}
+
+	.message {
+		font-size: 2rem;
+		font-weight: 600;
+	}
+
+	.invitation {
+		margin: 2rem auto;
+		padding: 1rem 2rem;
+		display: grid;
+		grid-template-columns: 45% 55%;
+	}
+
+	.ack {
+		font-size: 2.2rem;
+		margin: 4rem 0 2rem;
+	}
+
+	.desc h2 {
+		font-size: 3rem;
+		margin: 3rem 0 5rem;
+	}
+
+	.desc .herobtn {
+		margin: 0;
+	}
+
+	.desc .herobtn .h-btn {
+		margin: 0 0 0 1rem;
+	}
+
+	.inv-img {
+		bottom: -7rem;
+	}
+
+	/* ! FOOTER  */
+
+	footer {
+		margin-top: 9rem;
+		padding: 1rem;
+	}
+
+	.footer {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		font-size: 1.8rem;
+		max-width: 140rem;
+		margin: 0 auto;
+		justify-content: space-between;
+		padding: 0 1.5rem;
+		align-items: center;
+		gap: 3rem;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	nav {
+		padding: 3rem;
+	}
+
+	.logo {
+		width: 14rem;
+	}
+
+	.navigation {
+		width: 70%;
+		justify-content: space-between;
+	}
+
+	.nav-items {
+		display: inline;
+	}
+
+	.nav-list {
+		display: inline;
+		line-height: unset;
+	}
+
+	.nav-link {
+		font-size: 2rem;
+		margin-right: 2rem;
+	}
+
+	.login {
+		margin: 0;
+	}
+
+	.login li a {
+		font-size: 2rem;
+		padding: 0.3rem 1.2rem;
+		margin-left: 2rem;
+	}
+
+	/* ! HERO  */
+
+	.heading {
+		font-size: 4rem;
+	}
+
+	.description {
+		font-size: 2.5rem;
+		margin: 1rem 0 4rem;
+	}
+
+	.herobtn {
+		margin: 0;
+	}
+
+	.stripe {
+		padding: 2rem;
+		gap: 2rem;
+	}
+
+	.stripe img {
+		width: 12rem;
+	}
+
+	.section-header {
+		font-size: 4rem;
+		margin: 7rem 0;
+	}
+
+	/* ! ABOUT  */
+
+	.home {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 0 2rem;
+	}
+
+	.about-article {
+		order: 10;
+	}
+
+	.about-article .heading {
+		font-size: 2.8rem;
+	}
+
+	.points {
+		padding: 0;
+	}
+
+	.points ul {
+		margin: 0;
+		row-gap: 2rem;
+	}
+
+	.guide {
+		justify-content: center;
+		padding: 2rem;
+	}
+
+	.guide-sec .heading {
+		font-size: 3rem;
+	}
+
+	.guide-sec > h2 {
+		padding: 0 15rem;
+		text-align: center;
+		margin: 10rem auto 3rem;
+	}
+
+	.guide div {
+		gap: 1.5rem;
+		width: 40rem;
+		margin: 2rem auto;
+		padding: 0 1rem;
+	}
+
+	.guide h2 {
+		font-size: 2.5rem;
+	}
+
+	.guide p {
+		font-size: 1.8rem;
+	}
+
+	/* !  SERVICES  */
+	.services {
+		padding: 1rem 2rem;
+		max-width: 140rem;
+		margin: 0 auto;
+	}
+
+	.service {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 4rem;
+		justify-content: space-between;
+		margin: 10rem 0;
+		align-items: flex-start;
+		gap: 4rem;
+	}
+
+	.service button {
+		padding: 1.5rem 2rem;
+		font-size: 1.6rem;
+	}
+
+	.service h2 {
+		font-size: 4.5rem;
+	}
+
+	.service p {
+		font-size: 2.4rem;
+		margin-bottom: 1rem;
+	}
+
+	/* ! REVIEWS  */
+
+	.reviews {
+		padding: 2rem;
+		margin: 0 auto;
+		max-width: 140rem;
+	}
+
+	.review img {
+		width: 100%;
+		margin: 2rem auto 3rem;
+	}
+
+	.name {
+		font-size: 3.5rem;
+		text-align: left;
+		margin: 2rem 0;
+	}
+
+	.message {
+		font-size: 2.3rem;
+		font-weight: 600;
+	}
+
+	.invitation {
+		margin: 2rem auto;
+		padding: 1rem 2rem;
+		display: grid;
+		grid-template-columns: 45% 55%;
+		align-items: center;
+	}
+
+	.ack {
+		font-size: 2.4rem;
+		margin: 4rem 0 2rem;
+	}
+
+	.desc h2 {
+		font-size: 3rem;
+		margin: 3rem 0 5rem;
+	}
+
+	.desc .herobtn {
+		margin: 0;
+	}
+
+	.desc .herobtn .h-btn {
+		margin: 0 0 0 1rem;
+	}
+
+	.inv-img {
+		bottom: -7rem;
+	}
+
+	/* ! FOOTER  */
+
+	footer {
+		margin-top: 9rem;
+		padding: 1rem;
+	}
+
+	.footer {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		font-size: 1.8rem;
+		max-width: 140rem;
+		margin: 0 auto;
+		justify-content: space-between;
+		padding: 0 1.5rem;
+		align-items: center;
+		gap: 3rem;
+	}
+}
+
+@media screen and (min-width: 1400px) {
 	/* ! HEADER  */
 
 	nav {
-		padding: 2rem 3rem;
+		padding: 3rem;
 	}
 
 	.logo {
@@ -781,7 +1275,7 @@ footer > p > a {
 	}
 
 	.login li a {
-		font-size: 2rem;
+		font-size: 2.3rem;
 		padding: 0.3rem 1.1rem;
 		margin-left: 2.5rem;
 	}
@@ -800,7 +1294,7 @@ footer > p > a {
 
 	.hero-img {
 		margin: 2rem 0 3rem;
-		width: 65rem;
+		width: 100%;
 	}
 
 	.heading {
@@ -812,21 +1306,21 @@ footer > p > a {
 	.description {
 		font-size: 2.3rem;
 		text-align: left;
-		padding: 0 6rem;
+		padding: 0;
 		margin: 1rem 0 4rem;
 	}
 
 	.herobtn {
-		margin: 0 6rem;
+		margin: 0;
 	}
 
 	.stripe {
 		padding: 2rem;
-		gap: 2rem;
+		gap: 1rem;
 	}
 
 	.stripe img {
-		width: 9rem;
+		width: 12rem;
 	}
 
 	.section-header {
@@ -849,14 +1343,7 @@ footer > p > a {
 		font-size: rem;
 	}
 
-	.points {
-		padding: 0 0 0 2rem;
-	}
-
 	.points ul {
-		grid-template-columns: repeat(2, 1fr);
-		display: grid;
-		margin: 0 auto;
 		width: 60rem;
 		row-gap: 2rem;
 	}
@@ -919,7 +1406,7 @@ footer > p > a {
 	}
 
 	.service h2 {
-		font-size: 4.9rem;
+		font-size: 4rem;
 	}
 
 	.service p {
@@ -964,7 +1451,7 @@ footer > p > a {
 	}
 
 	.desc h2 {
-		font-size: 6rem;
+		font-size: 4.5rem;
 		margin: 3rem 0 5rem;
 	}
 
